@@ -1,0 +1,35 @@
+* {margin: 0; padding: 0;}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("/fontes/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url("/fontes/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("/fontes/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url("/fontes/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: NATS-Regular;
+    src: url("/fontes/NATS-Regular.ttf") format("truetype");
+}
+
+:root {
+    --preto: #333333;
+    --roxo: #4B0082;
+    --amarelo: #FFC107;
+    --branco: #F2F2F2;
+    --lilas: #9B59B6;
+    --verde: #27AE60;
+}

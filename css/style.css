@@ -1,0 +1,410 @@
+body {
+    background-color: var(--branco);
+}
+
+header {
+    width: 100%;
+    height: 113px;
+    background-color: var(--roxo);
+    box-shadow: 0px 4px 17.5px black;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    font: 1.75em "NATS-Regular", sans-serif;
+    width: 100%;
+    height: 113px;
+    list-style-type: none;
+    display: inline-flex;
+    gap: 2.3%;
+    justify-content: center;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+li a:hover {
+    color: var(--amarelo);
+}
+
+#banner-principal {
+    width: 100%;
+    display: flex;
+    margin-top: 113px;
+    box-shadow: inset 0px 10px 18px #00000085;
+    border-bottom: solid 20px var(--amarelo);
+}
+
+
+.carrossel {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 25%;
+}
+
+.carrossel-item {
+    background-color: var(--amarelo);
+    width: 60%;
+    height: max-content;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: opacity 1s ease;
+}
+
+.texto-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.carrossel-item h2 {
+    font: 1.5em "Poppins-ExtraBold", sans-serif;
+    color: var(--verde);
+    text-align: center;
+}
+
+.carrossel-item h1 {
+    font: 2em "Poppins-ExtraBold", sans-serif;
+    color: var(--lilas);
+    text-align: center;
+}
+
+.carrossel-item p {
+    font: 1.6em "Poppins-Bold", sans-serif;
+    color: var(--preto);
+    text-align: center;
+}
+
+.p-item {
+    margin-top: 1%;
+}
+
+.metra-carrossel, .dorm-carrossel, .locali-carrossel {
+    display: flex;
+}
+
+.botao-carrossel {
+    background-color: var(--lilas);
+    border-radius: 20px;
+    width: 45%;
+    height: max-content;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.botao-item {
+    padding: 10% 5%;
+}
+
+.botao-carrossel a {
+    text-decoration: none;
+    font: 1.5em "Poppins-Bold", sans-serif;
+    color: var(--branco);
+}
+
+
+
+
+.carrossel-item img {
+    width: 60%;
+    margin: 1.2%;
+    
+}
+
+.logo {
+    background-color: var(--amarelo);
+    width: 20%;
+    padding: 1% 0.5%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+
+
+
+
+.texto-navs {
+    margin: 0% 13.02% 0% 13.02%;
+    text-align: center;
+}
+    
+
+.texto-navs h1 {
+    font: 2.6em "Poppins-ExtraBold", sans-serif;
+    color: var(--lilas);
+}
+
+.texto-navs p {
+    font: 1.6em "Poppins-Regular", sans-serif;
+    color: var(--preto);
+    margin-top: 1%;
+}
+
+#bold {
+    font-family: "Poppins-SemiBold", sans-serif;
+}
+
+.empreendimentos {
+    margin-top: 67px;
+}
+
+
+#hide {
+    visibility: hidden;
+}
+
+#titulo-emp {
+    font: 3.43em "Poppins-ExtraBold", sans-serif;
+    color: var(--lilas);
+    text-align: center;
+}
+
+.empreendimentos-mini {
+    margin: 2% 13%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
+
+.emp-mini {
+    width: 100%;
+    height: max-content;
+    border: 6px solid var(--lilas);
+    overflow: hidden;
+    flex-basis: 32.03%;
+}
+
+#titulo-verde-mini {
+    font: 1.68em "Poppins-ExtraBold", sans-serif;
+    color: var(--verde);
+    margin: 9% 0% 0% 4%;
+}
+
+#titulo-mini {
+    font: 2em "Poppins-ExtraBold", sans-serif;
+    color: var(--lilas);
+    margin: -1% 0% 2% 4%;
+}
+
+.foto {
+    width: 100%;
+}
+
+.icons-mini {
+    margin: 20px 0% 0% 13%;
+}
+
+.metra, .dorm, .locali {
+    display: flex;
+    text-align: center;
+}
+
+.logo-mini {
+    width: 13.69%;
+    display: flex;
+    justify-content: center;
+}
+
+.metra p, .dorm p, .locali p {
+    font: 1.87em "NATS-Regular", sans-serif;
+    color: var(--preto);
+    margin-left: 35px;
+}
+
+.botao-mini {
+    background-color: var(--lilas);
+    border-radius: 20px 20px 5px 5px;
+    width: 45%;
+    height: max-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.botao-item-mini {
+    padding: 8% 5%;
+    margin-top: 1%;
+}
+
+.botao-mini a {
+    text-decoration: none;
+    font: 1.3em "Poppins-Bold", sans-serif;
+    color: var(--branco);
+}
+
+
+
+.cta {
+    background-color: var(--roxo);
+    max-width: 100%;
+    height: max-content;
+    margin-top: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0%;
+}
+
+.texto-cta {
+
+}
+
+.cta h1 {
+    font: 4em "Poppins-ExtraBold", sans-serif;
+    color: var(--branco);
+}
+
+.cta p {
+    font: 2.56em "Poppins-ExtraBold", sans-serif;
+    color: var(--amarelo);
+}
+
+.botao-cta {
+    font: 2.56em "Poppins-Bold", sans-serif;
+    margin-top: 4%;
+}
+
+.fundo-botao-cta {
+    background-color: var(--amarelo);
+    box-shadow: inset 0px 8px 16px -5px var(--preto);
+    width: 100%;
+    border-radius: 20px;
+    height: max-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.fundo-botao-cta img {
+    margin-left: 20px;
+}
+
+.botao-cta a {
+    text-decoration: none;
+}
+
+.mcmv {
+    text-align: center;
+    margin: 9% 13% 0% 13%;
+}
+
+.mcmv h1 {
+    font: 3.43em "Poppins-ExtraBold", sans-serif;
+    color: var(--lilas);
+}
+
+.mcmv p {
+    font: 1.56em "Poppins-Regular", sans-serif;
+    color: var(--preto);
+    margin-top: 2%;
+}
+
+.mcmv h2 {
+    font: 2.43em "Poppins-ExtraBold", sans-serif;
+    color: var(--lilas);
+    margin-top: 6%;
+}
+
+.mcmv h3 {
+    font: 1.87em "Poppins-SemiBold", sans-serif;
+    color: var(--roxo);
+}
+
+.mcmv-quem-textos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid 5px var(--lilas);
+    border-top: none;
+    padding: 5% 0%;
+    gap: 4%;
+}
+
+.mcmv-h3 {
+   width: 40%;
+}
+
+.mcmv-quais-textos1, .mcmv-quais-textos2 {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+
+.mcmv-quais-textos1 {
+    margin-top: 4%;
+}
+
+.mcmv-quais-textos2 {
+    margin-top: 5%;
+}
+
+.mcmv-h3-quais {
+    width: 40%;
+}
+
+.sobre-empresas {
+    background-color: var(--amarelo);
+    max-width: 100%;
+    height: max-content;
+    margin-top: 8%;
+    text-align: center;
+    padding: 3% 14%;
+    box-shadow: inset 0px -8px 16px -5px var(--preto);
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+}
+
+.sobre-alinhamento {
+    margin-top: 3%;
+}
+
+.sobre-empresas p {
+    font: 1.25em "Poppins-Regular", sans-serif;
+    color: var(--preto);
+    margin-top: 4%;
+    text-align: left;
+}
+
+.sobre-kazzas img {
+    width: 30%;
+}
+
+.sobre-engelux img {
+    width: 40%;
+}
+
+.sobre-roberto img {
+   margin-top: 3%;
+   width: 25%;
+}
+
+footer {
+    background-color: var(--roxo);
+    height: 300px;
+}
