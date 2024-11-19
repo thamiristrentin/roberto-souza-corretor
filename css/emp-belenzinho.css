@@ -1,0 +1,143 @@
+body {
+    background-color: var(--lilas);
+}
+
+header {
+    width: 100%;
+    background-color: var(--roxo);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    box-shadow: 0px 4px 17.5px black;
+}
+
+nav ul {
+    font: 1.3em "Poppins-SemiBold", sans-serif;
+    width: 100%;
+    height: 113px;
+    list-style-type: none;
+    display: inline-flex;
+    gap: 2.3%;
+    justify-content: center;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+li a:hover {
+    color: var(--amarelo);
+}
+
+
+#nav-2 {
+    background-color: var(--amarelo);
+}
+
+#nav-2 ul {
+    font: 1.1em "Poppins-SemiBold", sans-serif;
+    width: 100%;
+    height: 60px;
+    list-style-type: none;
+    display: inline-flex;
+    gap: 2.8%;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-2 li a {
+    text-decoration: none;
+    color: var(--roxo);
+}
+
+#nav-2 li a:hover {
+    color: var(--lilas);
+}
+
+#nav-2 li a:focus {
+    color: var(--lilas);
+}
+
+main {
+    margin-top: 173px;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.info {
+    background-color: var(--branco);
+    border-radius: 0px 0px 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    padding: 3% 5%;
+    box-shadow: inset 0px 8px 16px -5px var(--preto);
+}
+
+.locali {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo h1 {
+    font: 3.3em "Poppins-Bold", sans-serif;
+    color: var(--roxo);
+}
+
+.titulo h2 {
+    font: 2em "Poppins-Bold", sans-serif;
+    color: var(--verde);
+}
+
+.endereco {
+    display: flex;
+}
+
+.endereco p {
+    font: 1.7em "Poppins-Regular", sans-serif;
+    color: var(--preto);
+}
+
+.icons {
+    margin-top: 5%;
+}
+
+.dorm, .metra, .vagas {
+    display: flex;
+    margin-top: 2%;
+}
+
+.dorm img, .metra img, .vagas img {
+    margin-right: 2%;
+}
+
+.dorm p, .metra p, .vagas p {
+    font: 1.6em "Poppins-Regular", sans-serif;
+    color: var(--preto);
+}
+
+.dif {
+    display: flex;
+    gap: 6em;
+    margin-top: 1em;
+}
+
+.diferenciais h2 {
+    font: 2.18em "Poppins-Bold", sans-serif;
+    color: var(--lilas);
+}
+
+.diferenciais p {
+    font: 1.6em "Poppins-Regular", sans-serif;
+    color: var(--preto);
+}

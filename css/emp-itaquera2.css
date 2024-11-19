@@ -79,7 +79,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4%;
+    gap: 10em;
     padding: 3% 5%;
     box-shadow: inset 0px 8px 16px -5px var(--preto);
 }
@@ -92,6 +92,11 @@ main {
 .titulo h1 {
     font: 3.3em "Poppins-Bold", sans-serif;
     color: var(--roxo);
+}
+
+.titulo h2 {
+    font: 2em "Poppins-Bold", sans-serif;
+    color: var(--verde);
 }
 
 .endereco {
@@ -123,8 +128,8 @@ main {
 
 .dif {
     display: flex;
-    gap: 50px;
-    margin-top: 1%;
+    gap: 6em;
+    margin-top: 1em;
 }
 
 .diferenciais h2 {
