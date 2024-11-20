@@ -297,6 +297,7 @@ li a:hover {
 
 .botao-cta a {
     text-decoration: none;
+    color: var(--roxo);
 }
 
 .mcmv {
