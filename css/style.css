@@ -46,8 +46,10 @@ li a:hover {
 
 .carrossel {
     position: relative;
-    padding-top: 5%;
-    padding-bottom: 25%;
+    padding-top: 3%;
+    padding-bottom: 18%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .carrossel-item {
@@ -139,7 +141,10 @@ li a:hover {
 
 
 
-
+#section-texto-navs {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 .texto-navs {
     margin: 0% 13.02% 0% 13.02%;
@@ -160,6 +165,11 @@ li a:hover {
 
 #bold {
     font-family: "Poppins-SemiBold", sans-serif;
+}
+
+#section-empreendimentos {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .empreendimentos {
@@ -255,7 +265,7 @@ li a:hover {
     background-color: var(--roxo);
     max-width: 100%;
     height: max-content;
-    margin-top: 16%;
+    margin-top: 12%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -300,9 +310,14 @@ li a:hover {
     color: var(--roxo);
 }
 
+#section-mcmv {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .mcmv {
     text-align: center;
-    margin: 9% 13% 0% 13%;
+    margin: 7% 13% 0% 13%;
 }
 
 .mcmv h1 {

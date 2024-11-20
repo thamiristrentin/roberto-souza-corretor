@@ -142,7 +142,10 @@ main {
     color: var(--preto);
 }
 
-
+#section-galeria {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 #titulo-galeria {
     font: 3.5em "Poppins-Bold", sans-serif;
