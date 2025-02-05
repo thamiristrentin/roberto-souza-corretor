@@ -43,92 +43,6 @@ li a:hover {
     border-bottom: solid 20px var(--amarelo);
 }
 
-
-.carrossel {
-    position: relative;
-    padding-top: 3%;
-    padding-bottom: 18%;
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
-.carrossel-item {
-    background-color: var(--amarelo);
-    width: 60%;
-    height: max-content;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-    transition: opacity 1s ease;
-}
-
-.texto-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
-.carrossel-item h2 {
-    font: 1.5em "Poppins-ExtraBold", sans-serif;
-    color: var(--verde);
-    text-align: center;
-}
-
-.carrossel-item h1 {
-    font: 2em "Poppins-ExtraBold", sans-serif;
-    color: var(--lilas);
-    text-align: center;
-}
-
-.carrossel-item p {
-    font: 1.6em "Poppins-Bold", sans-serif;
-    color: var(--preto);
-    text-align: center;
-}
-
-.p-item {
-    margin-top: 1%;
-}
-
-.metra-carrossel, .dorm-carrossel, .locali-carrossel {
-    display: flex;
-}
-
-.botao-carrossel {
-    background-color: var(--lilas);
-    border-radius: 20px;
-    width: 45%;
-    height: max-content;
-    margin: auto;
-    margin-top: 10%;
-    text-align: center;
-}
-
-.botao-item {
-    padding: 10% 5%;
-}
-
-.botao-carrossel a {
-    text-decoration: none;
-    font: 1.5em "Poppins-Bold", sans-serif;
-    color: var(--branco);
-}
-
-
-
-
-.carrossel-item img {
-    width: 60%;
-    margin: 1.2%;
-    
-}
-
 .logo {
     background-color: var(--amarelo);
     width: 20%;
@@ -139,77 +53,106 @@ li a:hover {
     text-align: center;
 }
 
+/* ---------------------------------------------------------- */
 
-
-#section-texto-navs {
+#section-texto-principal {
     max-width: 1920px;
     margin: 0 auto;
 }
 
-.texto-navs {
-    margin: 0% 13.02% 0% 13.02%;
+.texto-principal {
     text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
 }
     
-
-.texto-navs h1 {
-    font: 2.6em "Poppins-ExtraBold", sans-serif;
+.texto-principal h1 {
+    font: 2.5rem "Poppins-ExtraBold", sans-serif;
     color: var(--lilas);
 }
 
-.texto-navs p {
-    font: 1.6em "Poppins-Regular", sans-serif;
+.texto-principal p {
+    font: 1.5rem "Poppins-Regular", sans-serif;
     color: var(--preto);
-    margin-top: 1%;
+    padding-top: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
 }
 
 #bold {
     font-family: "Poppins-SemiBold", sans-serif;
 }
 
+/* ---------------------------------------------------------- */
+
 #section-empreendimentos {
     max-width: 1920px;
     margin: 0 auto;
 }
 
-.empreendimentos {
-    margin-top: 67px;
-}
-
-
 #hide {
     visibility: hidden;
 }
 
+.titulo-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 15rem;
+}
+
+#selecao-zona {
+    padding: 1rem 10rem 1rem 1.56rem;
+    font: 1.4rem Poppins-Regular, sans-serif;
+    border-radius: 15px;
+    border: 1px solid #7e7e7e;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("../imagens/select.png") no-repeat top -0.67rem right -0.9rem transparent;
+}
+
 #titulo-emp {
-    font: 3.43em "Poppins-ExtraBold", sans-serif;
+    font: 2.81em "Poppins-ExtraBold", sans-serif;
     color: var(--lilas);
     text-align: center;
 }
 
 .empreendimentos-mini {
-    margin: 2% 13%;
+    padding: 2% 13%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2%;
 }
 
 .emp-mini {
-    width: 100%;
-    height: max-content;
     border: 6px solid var(--lilas);
-    overflow: hidden;
-    flex-basis: 32.03%;
+    flex-basis: 20rem;
+    position: relative;
+    z-index: 90;
+}
+
+.logo-emp {
+    display: flex;
+    background-color: var(--amarelo);
+    padding: 0.6rem 1rem;
+    border-radius: 15px;
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    z-index: 100;
 }
 
 #titulo-verde-mini {
-    font: 1.68em "Poppins-ExtraBold", sans-serif;
+    font: 1.4em "Poppins-ExtraBold", sans-serif;
     color: var(--verde);
     margin: 9% 0% 0% 4%;
 }
 
 #titulo-mini {
-    font: 2em "Poppins-ExtraBold", sans-serif;
+    font: 1.6em "Poppins-ExtraBold", sans-serif;
     color: var(--lilas);
     margin: -1% 0% 2% 4%;
 }
@@ -219,7 +162,7 @@ li a:hover {
 }
 
 .icons-mini {
-    margin: 20px 0% 0% 13%;
+    padding: 0.2rem 0% 0% 13%;
 }
 
 .metra, .dorm, .locali {
@@ -228,15 +171,19 @@ li a:hover {
 }
 
 .logo-mini {
-    width: 13.69%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
+.logo-mini img {
+    max-width: 3rem;
+}
+
 .metra p, .dorm p, .locali p {
-    font: 1.87em "NATS-Regular", sans-serif;
+    font: 1.6em "NATS-Regular", sans-serif;
     color: var(--preto);
-    margin-left: 35px;
+    padding-left: 1.5rem;
 }
 
 .botao-mini {
@@ -259,7 +206,7 @@ li a:hover {
     color: var(--branco);
 }
 
-
+/* ---------------------------------------------------------- */
 
 .cta {
     background-color: var(--roxo);
@@ -309,6 +256,8 @@ li a:hover {
     text-decoration: none;
     color: var(--roxo);
 }
+
+/* ---------------------------------------------------------- */
 
 #section-mcmv {
     max-width: 1920px;
@@ -374,6 +323,8 @@ li a:hover {
     width: 40%;
 }
 
+/* ---------------------------------------------------------- */
+
 .sobre-empresas {
     background-color: var(--amarelo);
     max-width: 100%;
@@ -414,6 +365,8 @@ li a:hover {
    margin-top: 3%;
    width: 25%;
 }
+
+/* ---------------------------------------------------------- */
 
 footer {
     background-color: var(--roxo);
