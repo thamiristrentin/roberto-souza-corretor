@@ -81,48 +81,83 @@ body {
     line-height: 3rem;
 }
 
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+
 #section-galeria {
-    max-width: 1920px;
     margin: 0 auto;
+    padding-top: 6rem;
 }
 
-.carousel {
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 100%;
-    max-width: 800px;
     overflow: hidden;
-    margin: 20px auto;
-    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
   }
   
   .carousel-track {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease;
   }
   
   .carousel-track img {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 10px;
+    width: 100%; /* Para deixar responsivo */
+    max-width: 200px;
+    opacity: 0.6;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+  }
+  
+  .carousel-track img.active {
+    max-width: 300px;
+    opacity: 1;
+    transform: scale(1);
   }
   
   .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px;
-    z-index: 1;
+    z-index: 15;
     border-radius: 50%;
+    font-size: 3rem;
   }
   
   .left-arrow {
-    left: 10px;
+    left: 5rem;
   }
   
   .right-arrow {
-    right: 10px;
+    right: 5rem;
+  }
+
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+
+.botao-sabermais {
+    padding: 3rem 0 3.5rem 0;
+}
+
+  .bg-botao {
+    background-color: var(--amarelo);
+    width: max-content;
+    padding: 1.31rem 3.62rem;
+    border-radius: 23px;
+    margin: 0 auto;
+
+  }
+
+.botao-sabermais a {
+    text-decoration: none;
+    color: var(--roxo);
+    font: 2rem "Poppins-Bold", sans-serif;
   }

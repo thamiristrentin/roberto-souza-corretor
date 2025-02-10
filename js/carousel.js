@@ -1,21 +1,27 @@
-const track = document.querySelector('.carousel-track');
-const images = document.querySelectorAll('.carousel-track img');
-const leftArrow = document.querySelector('.left-arrow');
-const rightArrow = document.querySelector('.right-arrow');
-
-let currentIndex = 0;
-
-function updateCarousel() {
-  const imageWidth = images[0].clientWidth;
-  track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+function updateSlideStyles() {
+  const slides = Array.from(track.children);
+  slides.forEach((slide, index) => {
+    if (index === currentIndex) {
+      slide.classList.add("active");
+    } else {
+      slide.classList.remove("active");
+    }
+  });
 }
 
-rightArrow.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  updateCarousel();
+// Atualiza os estilos ao mover
+nextButton.addEventListener("click", () => {
+  if (currentIndex < totalSlides - 1) {
+    moveToSlide(currentIndex + 1);
+    updateSlideStyles();
+  }
 });
 
-leftArrow.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  updateCarousel();
+prevButton.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    moveToSlide(currentIndex - 1);
+    updateSlideStyles();
+  }
 });
+
+updateSlideStyles(); // Chamar ao carregar
